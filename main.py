@@ -28,7 +28,8 @@ class SpeedTestWpm:
 
     def read_text_file(self, file_path):
         """
-        Lee el contenido de un archivo de texto (.txt) y lo devuelve como una cadena de texto.
+        Lee el contenido de un archivo de texto (.txt) y lo devuelve como una 
+        cadena de texto.
         """
         try:
             with open(file_path, "r") as file:
@@ -36,6 +37,10 @@ class SpeedTestWpm:
                 return text
         except FileNotFoundError:
             print("El archivo no existe.")
+
+    # TODO: lógica de tiempo
+    # TODO: lógica conteo de palabras
+    # TODO: lógica calcular tiempo
 
    
 if __name__ == '__main__':
